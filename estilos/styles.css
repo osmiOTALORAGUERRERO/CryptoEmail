@@ -10,6 +10,10 @@ height: 100%;
 font-family: 'Numans', sans-serif;
 }
 
+.titulo{
+  color: white;
+  text-align: center;;
+}
 .container{
 height: 100%;
 align-content: center;

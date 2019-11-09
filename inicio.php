@@ -12,6 +12,7 @@
 	<!--Custom styles-->
 	<link rel="stylesheet" type="text/css" href="estilos/styles.css">
 </head>
+<h1 class=" titulo">CryptoEmail</h1>
 <body>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
