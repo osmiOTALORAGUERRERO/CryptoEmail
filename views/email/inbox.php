@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
     <title>CryptoEmail</title>
-    <link rel="stylesheet"  type="text/css" href="/estilos/principal.css">
+    <link rel="stylesheet"  type="text/css" href="../assets/styles/inbox.css">
   </head>
   <h1 class=" titulo">CryptoEmail</h1>
   <body>
