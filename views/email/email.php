@@ -9,8 +9,12 @@
   </div>
   <div class="col-9">
     <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-inbox" role="tabpanel" aria-labelledby="v-pills-inbox-tab">Inbox</div>
-      <div class="tab-pane fade" id="v-pills-outbox" role="tabpanel" aria-labelledby="v-pills-outbox-tab">Outbox</div>
+      <div class="tab-pane fade show active" id="v-pills-inbox" role="tabpanel" aria-labelledby="v-pills-inbox-tab">
+        <?php require "messages.php"?>
+      </div>
+      <div class="tab-pane fade" id="v-pills-outbox" role="tabpanel" aria-labelledby="v-pills-outbox-tab">
+        <?php require "messages.php"?>
+      </div>
       <div class="tab-pane fade" id="v-pills-write" role="tabpanel" aria-labelledby="v-pills-write-tab">
         <?php require_once "write.php"?>        
       </div>
