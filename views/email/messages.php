@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="form-group">
-        <textarea class="form-control" id="message-text"></textarea>
+        <textarea readonly class="form-control" id="message-text"></textarea>
     </div>
     <div class="form-group">
         <input type="hidden" name="idEmisor" value="1">
@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="form-group">
-        <textarea class="form-control" id="message-text"></textarea>
+        <textarea readonly class="form-control" id="message-text"></textarea>
     </div>
     <div class="form-group">
         <input type="hidden" name="idEmisor" value="1">
@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="form-group">
-        <textarea class="form-control" id="message-text"></textarea>
+        <textarea readonly class="form-control" id="message-text"></textarea>
     </div>
     <div class="form-group">
         <input type="hidden" name="idEmisor" value="1">

@@ -21,6 +21,10 @@
             <label for="message-text" class="col-form-label">Message:</label>
             <textarea class="form-control" id="message-text"></textarea>
           </div>
+          <div class="form-group">
+            <label for="password-text" class="col-form-label">password:</label>
+            <input type="number" class="form-control" id="password-text"></textarea>
+          </div>
           <input type="hidden" name="idEmisor" value="1">
         </form>
       </div>
