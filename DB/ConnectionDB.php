@@ -13,7 +13,7 @@ class ConnectionDB
       $this->password = 'root';
       $this->charset  = 'utf8';
   }
-  private function connect(){
+  public function connect(){
       try{
           $connection = "mysql:host=". $this->host . ";dbname=" . $this->db . ";charset=" . $this->charset;
           $options = [
