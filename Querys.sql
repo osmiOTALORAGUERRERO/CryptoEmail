@@ -4,12 +4,12 @@ SELECT * FROM crypto_email.users WHERE email="dyg9812@gmail.com";
 SELECT * FROM crypto_email.receivedmessages 
     INNER JOIN crypto_email.messages ON receivedmessages.idMessage = messages.id
     INNER JOIN crypto_email.users ON receivedmessages.`from` = users.id 
-	WHERE idUser = 1;
+	WHERE idUser IN (SELECT id FROM crypto_email.users WHERE email = 'dyg9812@gmail.com');
 #Para traer los mensajes enviados del usuario logueado
 SELECT * FROM crypto_email.sentmessages 
     INNER JOIN crypto_email.messages ON sentmessages.idMessage = messages.id
     INNER JOIN crypto_email.users ON sentmessages.`for` = users.id 
-	WHERE idUser = 1;
+	WHERE idUser IN (SELECT id FROM crypto_email.users WHERE email = 'dyg9812@gmail.com');
 #Para traer los usuario disponibles que el usuario logueado tiene para enviar un correo
 SELECT id, name, email FROM crypto_email.users;
 #-----------------------------------------------------------------------------------------#
