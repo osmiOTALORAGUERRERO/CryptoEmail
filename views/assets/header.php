@@ -16,3 +16,18 @@
 </head>
 <body>
     <div class="container">
+        <div class="row border bg-light">
+            <div class="col align-self-center">
+            <h1 class="text-dark">Crypto Email</h1>
+            </div>
+            <div class="col align-self-start">
+            <h3 class="text-dark">Bienvenid@ nombre</h3>
+            </div>
+            <div class="col align-self-end">
+            <h3 class="text-dark">correo@yo.com</h3>
+            </div>
+            <div class="col align-self-end">
+            <a href="api/close_session.php">Close Session</a>
+            </div>
+        </div>
+        <br>
