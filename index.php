@@ -8,10 +8,10 @@
             $email = $_POST['email'];
             $password = $_POST['password'];
             $login = new Login();
-
+            var_dump($login->validate($email, $password));
             if($login->validate($email, $password)){
                 $_SESSION['user_email'] = $email;
-                header('location: '.$_SERVER['HTTP_HOST']. $_SERVER['PHP_SELF']);
+                header('location: ');
             }
         }
         require_once 'views/login.php';

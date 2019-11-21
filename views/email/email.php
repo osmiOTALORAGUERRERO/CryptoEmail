@@ -1,4 +1,4 @@
-<?php require_once "../assets/header.php"?> 
+<?php require_once "views/assets/header.php"?> 
 <div class="row">
   <div class="col-3">
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -10,16 +10,16 @@
   <div class="col-9">
     <div class="tab-content" id="v-pills-tabContent">
       <div class="tab-pane fade show active" id="v-pills-inbox" role="tabpanel" aria-labelledby="v-pills-inbox-tab">
-        <?php require "messages.php"?>
+        <?php require "views/email/messages.php"?>
       </div>
       <div class="tab-pane fade" id="v-pills-outbox" role="tabpanel" aria-labelledby="v-pills-outbox-tab">
-        <?php require "messages.php"?>
+        <?php require "views/email/messages.php"?>
       </div>
       <div class="tab-pane fade" id="v-pills-write" role="tabpanel" aria-labelledby="v-pills-write-tab">
-        <?php require_once "write.php"?>        
+        <?php require_once "views/email/write.php"?>        
       </div>
     </div>
   </div>
 </div>
 
-<?php require_once "../assets/foot.php"?> 
+<?php require_once "views/assets/foot.php"?> 

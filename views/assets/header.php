@@ -26,5 +26,8 @@
             <div class="col align-self-end">
             <h3 class="text-dark">correo@yo.com</h3>
             </div>
+            <div class="col align-self-end">
+            <a href="api/close_session.php">Close Session</a>
+            </div>
         </div>
         <br>
