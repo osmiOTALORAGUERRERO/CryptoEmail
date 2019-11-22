@@ -1,6 +1,7 @@
 $('document').ready(function () {
     jQuery.fn.extend({
         inbox: function () {
+            console.clear()
             console.log($(this).attr('id'))
             $.ajax({
                 type: 'POST',
@@ -46,6 +47,7 @@ $('document').ready(function () {
             })
         },
         outbox: function () {
+            console.clear()
             console.log($(this).attr('id'))
             $.ajax({
                 type: 'POST',

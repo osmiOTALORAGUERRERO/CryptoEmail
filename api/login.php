@@ -19,5 +19,15 @@ class Login {
         }
         return $access;
     }
+
+    public function getUser(string $email)
+    {
+        $user = null;
+        $sql = 'SELECT name, email FROM users WHERE email=:email';
+        $options = array(':email'=>$email);
+        $user = $this->connectionDB->executeQuery($sql, $options);
+
+        return $user[0];
+    }
 }
 ?>

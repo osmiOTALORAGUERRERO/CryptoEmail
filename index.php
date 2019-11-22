@@ -1,10 +1,12 @@
 <?php
     session_start();
+    require_once "api/login.php";
     if(isset($_SESSION['user_email'])){
+        $login = new Login();
+        $user = $login->getUser($_SESSION['user_email']);
         require_once 'views/email/email.php';
     }else {
         if($_SERVER['REQUEST_METHOD']=='POST'){
-            require_once "api/login.php";
             $email = $_POST['email'];
             $password = $_POST['password'];
             $login = new Login();
