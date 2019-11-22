@@ -53,7 +53,7 @@ $('document').ready(function () {
                 dataType: 'json'
             }).done(function(messages) {
                 console.log(messages)
-                $('#v-pills-inbox').empty();
+                $('#v-pills-outbox').empty();
                 if (messages.length > 0) {
                     let count = 1
                     for (const message of messages) {
@@ -79,7 +79,7 @@ $('document').ready(function () {
                             <input type="hidden" name="idReceptor" value="${message.receiver}">
                         </div>
                     </div>`)
-                    $content.appendTo('#v-pills-inbox')
+                    $content.appendTo('#v-pills-outbox')
                     }
                 } else {
                     $(this).html(`<div class="shadow p-3 mb-5 bg-white rounded">
