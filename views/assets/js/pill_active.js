@@ -1,7 +1,7 @@
 $('document').ready(function () {
     jQuery.fn.extend({
         inbox: function () {
-            console.clear()
+            // console.clear()
             console.log($(this).attr('id'))
             $.ajax({
                 type: 'POST',
@@ -21,14 +21,14 @@ $('document').ready(function () {
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputPassword${count}" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="inputPassword${count++}" placeholder="Password">
+                                <input type="password" class="form-control" id="inputPassword${count}" placeholder="Password">
                             </div>
                             <div class="form-group col-md-4">
-                                <button type="submit" class="btn btn-primary mb-2">Decode</button>
+                                <button type="button" id="${count}" class="btn btn-primary mb-2">Decode</button>
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea readonly class="form-control" id="message-text">${message.message}</textarea>
+                            <textarea readonly class="form-control" id="message-text${count++}">${message.message}</textarea>
                         </div>
                         <div class="form-group">
                             <input type="hidden" name="idEmisor" value="${message.transmitter}">
@@ -67,14 +67,14 @@ $('document').ready(function () {
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="inputPassword${count}" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="inputPassword${count++}" placeholder="Password">
+                                <input type="password" class="form-control" id="inputPassword${count}" placeholder="Password">
                             </div>
                             <div class="form-group col-md-4">
-                                <button type="submit" class="btn btn-primary mb-2">Decode</button>
+                                <button type="submit" id="${count}" class="btn btn-primary mb-2">Decode</button>
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea readonly class="form-control" id="message-text">${message.message}</textarea>
+                            <textarea readonly class="form-control" id="message-text${count++}">${message.message}</textarea>
                         </div>
                         <div class="form-group">
                             <input type="hidden" name="idEmisor" value="${message.transmitter}">

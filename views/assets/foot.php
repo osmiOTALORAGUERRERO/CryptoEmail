@@ -34,5 +34,7 @@
         })
         </script>
         <script src="views/assets/js/pill_active.js"></script>
+        <script src="views/assets/js/decipher_messages.js"></script>
+        <script src="views/assets/js/symmetrical_cryptographer.js" type="text/javascript"></script>
 </body>
 </html>
