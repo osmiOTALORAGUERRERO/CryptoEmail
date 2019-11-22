@@ -1,7 +1,8 @@
 $('documet').ready(function () {
     $('#v-pills-inbox, #v-pills-outbox').on('click', 'button', function(e){
+        console.log($(this))
         let id = $(this).attr('id')
-        let password = $(`#inputPassword${id}`).val()
+        var password = $(`#inputPassword${id}`).val()
         let message_cryptogram = $(`#message-text${id}`).val()
         let message = decode(message_cryptogram.split(' '), password)
         if(message.succes){
@@ -14,6 +15,6 @@ $('documet').ready(function () {
             alert('Hubo un problema con la contraseña')
             console.log(message)
         }
-    });
-    test();
+        e.preventDefault();
+    })
 })

@@ -1,4 +1,5 @@
 $('document').ready(function () {
+    var count = 1
     jQuery.fn.extend({
         inbox: function () {
             // console.clear()
@@ -11,7 +12,6 @@ $('document').ready(function () {
                 console.log(messages)
                 $('#v-pills-inbox').empty();
                 if (messages.length > 0) {
-                    let count = 1
                     for (const message of messages) {
                         let $content = $(`<div class="shadow p-3 mb-5 bg-white rounded">
                         <div class="form-row">
@@ -57,7 +57,6 @@ $('document').ready(function () {
                 console.log(messages)
                 $('#v-pills-outbox').empty();
                 if (messages.length > 0) {
-                    let count = 1
                     for (const message of messages) {
                         let $content = $(`<div class="shadow p-3 mb-5 bg-white rounded">
                         <div class="form-row">
@@ -70,7 +69,7 @@ $('document').ready(function () {
                                 <input type="password" class="form-control" id="inputPassword${count}" placeholder="Password">
                             </div>
                             <div class="form-group col-md-4">
-                                <button type="submit" id="${count}" class="btn btn-primary mb-2">Decode</button>
+                                <button type="button" id="${count}" class="btn btn-primary mb-2">Decode</button>
                             </div>
                         </div>
                         <div class="form-group">
