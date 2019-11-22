@@ -12,7 +12,7 @@
 
     <!--Custom styles-->
     <link rel="stylesheet" type="text/css" href="estilos/styles.css">
-    <title>Document</title>
+    <title>Crypto Email</title>
 </head>
 <body>
     <div class="container">
@@ -21,12 +21,12 @@
             <h1 class="text-dark">Crypto Email</h1>
             </div>
             <div class="col align-self-start">
-            <h3 class="text-dark">Bienvenid@ nombre</h3>
+            <h3 class="text-dark">Bienvenid@ </h3> <p><b><?php echo htmlspecialchars($user['name'])?></b></p>
             </div>
-            <div class="col align-self-end">
-            <h3 class="text-dark">correo@yo.com</h3>
+            <div class="col align-self-center">
+            <h4 class="text-dark"><?php echo htmlspecialchars($user['email'])?></h4>
             </div>
-            <div class="col align-self-end">
+            <div class="col align-self-center">
             <a href="api/close_session.php">Close Session</a>
             </div>
         </div>
