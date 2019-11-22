@@ -12,6 +12,7 @@
 
     <!--Custom styles-->
     <link rel="stylesheet" type="text/css" href="estilos/styles.css">
+    <script src="views/assets/js/math.js" type="text/javascript"></script>
     <title>Crypto Email</title>
 </head>
 <body>

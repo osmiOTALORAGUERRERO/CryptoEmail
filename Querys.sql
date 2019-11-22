@@ -19,3 +19,6 @@ INSERT INTO `crypto_email`.`messages` (`transmitter`, `receiver`, `message`) VAL
 INSERT INTO `crypto_email`.`receivedmessages` (`idUser`, `idMessage`, `from`) VALUES ('3', '6', '3');
 INSERT INTO `crypto_email`.`sentmessages` (`idUser`, `idMessage`, `for`) VALUES ('3', '6', '3');
 
+#Modificando columna de mensages de la tabla de mensages
+ALTER TABLE `crypto_email`.`messages` 
+CHANGE COLUMN `message` `message` VARCHAR(1024) NULL DEFAULT NULL ;

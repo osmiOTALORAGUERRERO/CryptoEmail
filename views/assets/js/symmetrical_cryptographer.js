@@ -1,7 +1,6 @@
-import {create, all} from 'mathjs';
-
 const config = {precision: 14}
-const math = create(all, config);
+math.create(math.all, config);
+
 const alphabet = {
     ' ':0 , a:1 , b:2 , c:3 , d:4, 
     e:5 , f :6 , g:7 , h:8 , i:9,
@@ -98,4 +97,9 @@ function ExceptionInput(message){
     this.nombre = "Exception Input";
 }
 
-export {code, decode};
+function test() {
+    console.log(code('Este mensaje es para el mismo alberto', 71))
+
+    let crypt = '22E9DB 195D894B 2275D48A 22E9DB 20C48A 22E9DB 195D894B 20C48A 2E22F3BB 42ACACA 20C48A 22E9DB 2B7A10B 20C493 69C003 1BAD48A 20C48A 21548A 22E9DB 20C48A 2B7A10B 20C493 42ACACA 2E22F3BB 22E9DB 1BAD48A 20C493 20C48A 20C493 20C48A 272CCA 69C003 195D894B 20DE2B 20C493 1BAD48A'.split(' ')
+    console.log(decode(crypt, 71))
+}
