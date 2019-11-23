@@ -93,6 +93,31 @@ $('document').ready(function () {
         },
         write: function () {
             console.log($(this).attr('id'))
+            console.clear()
+            console.log($(this).attr('id'))
+            $.ajax({
+                type: 'POST',
+                url: 'api/write_new_message.php',
+                dataType: 'json',
+                data: {'type_request':'users'}
+            }).done(function(users) {
+                console.log(users)
+                if (users.length > 0) {
+                    for (const user of users) {
+                        let $content = $(`<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#writeModal" data-whatever=${user.email}>${user.email} </button>
+                        `)
+                    $content.appendTo('#v-pills-write')
+                    console.log(user.email)
+                    }
+                } else {
+                    $(this).html(`<div class="shadow p-3 mb-5 bg-white rounded">
+                    <h2>No hay personas a las que le puedas enviar Emails</h2>
+                    </div>`)
+                }
+               
+            }).fail(function () {
+                console.log({error:'error'})
+            })
         }
     })
 
