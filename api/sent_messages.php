@@ -14,4 +14,7 @@ if (isset($_SESSION['user_email'])) {
         echo json_encode($received_messages);
     }
 }
-?>
+?> 
+
+
+

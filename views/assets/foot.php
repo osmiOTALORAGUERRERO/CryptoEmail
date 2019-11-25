@@ -28,7 +28,7 @@
             modal.find('.modal-title').text('New message to ' + recipient)
             modal.find('.modal-body input').val(recipient)
         })
-        $('#exampleModal').on('show.bs.modal', function (event) {
+        $('#writeModal').on('show.bs.modal', function (event) {
             var modal = $(this)
             modal.find('.modal-body textarea').val('')
         })
@@ -36,5 +36,7 @@
         <script src="views/assets/js/pill_active.js"></script>
         <script src="views/assets/js/decipher_messages.js"></script>
         <script src="views/assets/js/symmetrical_cryptographer.js" type="text/javascript"></script>
+        <script src="views/assets/js/send_message.js" type="text/javascript"></script>
+
 </body>
 </html>
