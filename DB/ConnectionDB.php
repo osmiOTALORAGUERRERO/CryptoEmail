@@ -10,7 +10,7 @@ class ConnectionDB
       $this->host     = 'localhost';
       $this->db       = 'crypto_email';
       $this->user     = 'root';
-      $this->password = '12345';
+      $this->password = 'root';
       $this->charset  = 'utf8';
   }
   public function connect(){
