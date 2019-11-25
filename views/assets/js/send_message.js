@@ -15,11 +15,11 @@ $('document').ready(function () {
             data: {email:email, message: message_code, type_request:'write'}
         }).done(function(data) {
             console.log(data)
-            if (data.succes) {
-                alert("el mensaje ha sido enviado")
-            } else{
-                alert("no se pudo enviar el mensaje ")
-            }
+            // if (data.succes) {
+            //     alert("el mensaje ha sido enviado")
+            // } else{
+            //     alert("no se pudo enviar el mensaje ")
+            // }
         }).fail(function () {
             console.log({error:'error'})
         })

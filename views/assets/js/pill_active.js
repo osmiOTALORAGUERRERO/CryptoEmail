@@ -101,7 +101,9 @@ $('document').ready(function () {
                 dataType: 'json',
                 data: {'type_request':'users'}
             }).done(function(users) {
+                alert('ayuda')
                 console.log(users)
+                alert("hola mundo");
                 if (users.length > 0) {
                     for (const user of users) {
                         let $content = $(`<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#writeModal" data-whatever=${user.email}>${user.email} </button>
