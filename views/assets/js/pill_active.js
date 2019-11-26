@@ -9,7 +9,6 @@ $('document').ready(function () {
                 url: 'api/received_messages.php',
                 dataType: 'json'
             }).done(function(messages) {
-                console.log(messages)
                 $('#v-pills-inbox').empty();
                 if (messages.length > 0) {
                     for (const message of messages) {
@@ -38,9 +37,10 @@ $('document').ready(function () {
                     $content.appendTo('#v-pills-inbox')
                     }
                 } else {
-                    $(this).html(`<div class="shadow p-3 mb-5 bg-white rounded">
+                    let $content = $(`<div class="shadow p-3 mb-5 bg-white rounded">
                     <h2>No tienes correos</h2>
                     </div>`)
+                    $content.appendTo('#v-pills-inbox')
                 }
             }).fail(function () {
                 console.log({error:'error'})
@@ -83,9 +83,10 @@ $('document').ready(function () {
                     $content.appendTo('#v-pills-outbox')
                     }
                 } else {
-                    $(this).html(`<div class="shadow p-3 mb-5 bg-white rounded">
-                    <h2>No tienes correos</h2>
+                   let $content=$(`<div class="shadow p-3 mb-5 bg-white rounded">
+                    <h2>No has enviado correos</h2>
                     </div>`)
+                    $content.appendTo('#v-pills-outbox')
                 }
             }).fail(function () {
                 console.log({error:'error'})

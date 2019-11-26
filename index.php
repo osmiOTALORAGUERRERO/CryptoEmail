@@ -10,7 +10,7 @@
             $email = $_POST['email'];
             $password = $_POST['password'];
             $login = new Login();
-            var_dump($login->validate($email, $password));
+            // var_dump($login->validate($email, $password));
             if($login->validate($email, $password)){
                 $_SESSION['user_email'] = $email;
                 header('location: ');
